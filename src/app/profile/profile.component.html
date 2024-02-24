@@ -1,1 +1,32 @@
-<p>profile works!</p>
+{{updateUser|json}}
+<div class="card" style="width: 18rem;">
+   
+    <div class="card-body">
+      <h5 class="card-title">Sign Up</h5>
+        
+      <div class="form-floating mb-3">
+        <input [(ngModel)]="updateUser.username" type="text" class="form-control" id="username" placeholder="username">
+        <label for="username">username</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input [(ngModel)]="updateUser.firstName" type="text" class="form-control" id="firstName" placeholder="firstName">
+        <label for="firstName">firstName</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input [(ngModel)]="updateUser.lastName" type="text" class="form-control" id="lastName" placeholder="lastName">
+        <label for="lastName">lastName</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input [(ngModel)]="updateUser.address" type="text" class="form-control" id="address" placeholder="address">
+        <label for="address">address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input [(ngModel)]="updateUser.email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      
+      <button (click)="update()" type="button" class="btn btn-primary">Update</button>
+    </div>
+  </div>
+

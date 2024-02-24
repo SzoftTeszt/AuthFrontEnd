@@ -8,18 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
+  newUser:any={}
+
   constructor(private auth:AuthService, private router:Router){}
 
-  signup(user?:any){
-    user={
-      "username": "Admin11",
-      "firstName": "string",
-      "lastName": "string",
-      "email": "user@example.com",
-      "password": "Almafa12;",
-      "address": "string"
-    }
-    this.auth.signup(user).subscribe(
+  signup(){
+    // user={
+    //   "username": "Admin11",
+    //   "firstName": "string",
+    //   "lastName": "string",
+    //   "email": "user@example.com",
+    //   "password": "Almafa12;",
+    //   "address": "string"
+    // }
+    console.log(this.newUser)
+    this.auth.signup(this.newUser).subscribe(
       {
         next:(res:any)=>{
           console.log("Sikeres reg")
