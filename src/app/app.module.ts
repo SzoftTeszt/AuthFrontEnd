@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     SigninComponent,
     SignupComponent,
     ProfileComponent,
-    UserlistComponent,ng versi  
+    UserlistComponent,
+    NavComponent  
   ],
   imports: [
     BrowserModule,
